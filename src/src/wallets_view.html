@@ -1,0 +1,29 @@
+  <section class="top" id="wallets">
+    <p class="eyebrow reveal">Robinhood Chain &middot; live</p>
+    <h1 class="reveal" style="--d:40ms">SMART WALLETS</h1>
+    <p class="hero-lead reveal" style="--d:90ms">Twelve wallets that trade this chain heavily, watched straight on the explorer. When one of them takes a position or drops one, it lands here within the minute &mdash; and you can have the browser tell you.</p>
+
+    <div class="wbar reveal" style="--d:150ms">
+      <button type="button" class="cbtn" id="alertBtn">Turn on alerts</button>
+      <span class="chelp" id="alertNote">a card slides in on the right on every new fill, with a sound &mdash; while this tab is open</span>
+    </div>
+
+    <div class="wfeed reveal" style="--d:200ms">
+      <div class="wfhead">
+        <span id="wfstamp">watching&hellip;</span>
+        <span class="wfcount" id="wfcount"></span>
+      </div>
+      <div id="wfrows" class="wfrows"></div>
+    </div>
+
+    <p class="hint reveal" style="--d:240ms">Read from the chain explorer in your browser: a token arriving in one of these wallets is shown as a buy, a token leaving it as a sell. The pairing leg (USDG, WETH) is filtered out so you see the position, not the plumbing. A plain wallet-to-wallet move looks the same as a sale from outside &mdash; open the transaction if it matters.</p>
+  </section>
+
+  <section>
+    <p class="eyebrow reveal">The list</p>
+    <div class="stack">
+      <h2 class="reveal">WHO IS BEING WATCHED</h2>
+      <div class="wlist reveal" style="--d:60ms" id="wlist"></div>
+      <p class="hint" style="max-width:74ch">The names and the ranking are not ours. They come from the FOMO Radar leaderboard, which is what Robinscan also puts on its Top Traders page. Two things worth knowing before you lean on them: the profit figures are that provider's <b>account-wide totals across every chain</b>, so most of it was not earned here &mdash; Robinscan says so on its own page; and the project itself reports roughly <b>one fill in eleven</b> credited to a tracked wallet was not actually that wallet's trade. We show the handles and the ranking as somebody else's opinion, and the fills below as something we read off the chain ourselves.</p>
+    </div>
+  </section>

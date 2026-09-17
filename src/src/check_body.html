@@ -1,0 +1,98 @@
+<div class="topbar">
+  <div class="wrap">
+    <nav class="nav">
+      <a class="brand" href="#check"><span class="sq"></span>DENTED</a>
+      <div class="tabs" role="navigation" aria-label="Sections">
+        <a class="tab on" href="#check" data-sec="check"><span class="lg">Condition check</span><span class="sm">Check</span></a>
+        <a class="tab" href="#new" data-sec="new"><span class="lg">New pairs</span><span class="sm">New</span></a>
+        <a class="tab" href="#why" data-sec="why"><span class="lg">Why dented cans</span><span class="sm">Why</span></a>
+        <a class="tab" href="token.html">$DENTED</a>
+      </div>
+    </nav>
+  </div>
+  <div class="marq"><div class="wrap marqwrap"><div class="row" id="marq"></div></div></div>
+</div>
+
+<div class="wrap">
+
+  <section class="top" id="check">
+    <p class="eyebrow reveal">Robinhood Chain &middot; $DENTED</p>
+    <h1 class="reveal">DENTED</h1>
+    <p class="hero-lead reveal" style="--d:90ms">Paste a token. We tell you what condition it arrived in &mdash; who holds it, what the contract and its owner can still do to you, what is actually behind the price, whether anyone is still trading it, and whether the label on the can is even its own.</p>
+
+    <div class="form reveal" style="--d:160ms">
+      <input id="addr" type="text" spellcheck="false" placeholder="Token address, pair address, or a DexScreener link" aria-label="Token contract address">
+      <button id="go" type="button">Check the can</button>
+    </div>
+    <p class="hint reveal" style="--d:220ms">Paste the token contract, the pair address, or just the DexScreener URL — all three work. The report has its own link, so you can send it to somebody. Read straight from the public explorer, the chain&rsquo;s own RPC and the DEX, in your browser; nothing is stored or sent anywhere else.</p>
+
+    <div id="out"></div>
+
+    <p id="tick" class="tick"></p>
+  </section>
+
+  <section id="new">
+    <p class="eyebrow reveal">Live from the chain</p>
+    <div class="stack">
+      <h2 class="reveal">THE SHELF &mdash; WHAT JUST ARRIVED</h2>
+      <p id="shelfline" class="sub">Reading the shelf&hellip;</p>
+      <div class="feedbar"><span class="livedot"></span><span id="feedstamp">watching for arrivals&hellip;</span></div>
+      <div id="shelf" class="shelf"></div>
+      <p class="hint" id="shelffoot">Every can here was put on the chain in the last few minutes &mdash; the feed re-reads every five seconds and new arrivals slide in at the front. Click one to run the full report on it.</p>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow reveal">The large end of the shelf</p>
+    <div class="stack">
+      <h2 class="reveal">BIGGEST OF WHAT LAUNCHED TODAY</h2>
+      <div class="table reveal" style="--d:60ms">
+        <div class="thead">
+          <span class="rk">#</span><span>Token</span><span class="cl">Market cap</span>
+          <span class="cl">Liquidity</span><span class="cl">Vol 24h</span><span class="cl">24h</span>
+          <span class="cl">Age</span><span>Quick read</span>
+        </div>
+        <div id="topbody"></div>
+      </div>
+      <p class="hint" id="topcap">Reading the chain&hellip;</p>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow reveal">What it checks</p>
+    <div class="stack">
+      <h2 class="reveal">THE CONDITION REPORT</h2>
+      <div class="two reveal" style="--d:80ms">
+        <div class="box"><h3>CAN YOU GET BACK OUT</h3><p>Before anything else: we simulate a real holder sending tokens into the pool, straight on the chain. If the contract refuses it, money goes in and does not come out, and nothing else on the page matters.</p></div>
+        <div class="box"><h3>IS THE LIQUIDITY NAILED DOWN</h3><p>Whether the launch position sits in the launchpad&rsquo;s locker &mdash; and whether that locker even has a function to release it again. A lock nobody can open is the only kind worth counting.</p></div>
+        <div class="box"><h3>WHO HOLDS IT</h3><p>How much sits in the top ten wallets, how much the single largest holds, whether they are new addresses made for this launch &mdash; and whether any of them are sending into the pool right now.</p></div>
+        <div class="box"><h3>WHAT CAN STILL BE DONE TO YOU</h3><p>Whether the source is published, whether it can mint, blacklist, change fees or pause; whether anyone still owns it; whether the code can be swapped through a proxy; and whether the deployer has already put out a dozen of these.</p></div>
+        <div class="box"><h3>WHAT IS BEHIND THE PRICE</h3><p>The chart, the high it fell from, liquidity across every pool, how much of the market cap that liquidity actually backs, and trades in the last hour against its own average. A chart with nothing behind it is a picture.</p></div>
+        <div class="box"><h3>THE LABEL</h3><p>Site, X, Telegram &mdash; opened straight from the report. Whether somebody paid to put them there, whether the name leans on a real one, and how many other tokens on this chain already use the same ticker.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why">
+    <p class="eyebrow reveal">Why a dented can</p>
+    <div class="stack">
+      <div class="quote reveal">
+        <p>"They shopped at Shoppers Food Warehouse rather than Safeway, because they have the dented cans."</p>
+        <cite>Vlad Tenev, who founded Robinhood, on his childhood &middot; "The Philosophies of Vlad Tenev", narrativ, 18 March 2026</cite>
+      </div>
+      <figure class="reveal" style="margin:0;width:100%;--d:90ms">
+        <div class="proof-shot"><img alt="Screenshot of the essay with the sentence about the dented cans highlighted." src="data:image/png;base64,__B64__"></div>
+        <figcaption class="proof-cap">&#9654; The passage in full. Highlighted: the line this is named after.</figcaption>
+      </figure>
+      <p>A family newly arrived from Sofia, buying the damaged tins because damaged was cheaper. Two decades later the same person built the brokerage that let anyone buy a share of anything, and then put the shares on a chain that never closes.</p>
+      <p class="sub">On that chain, 850,000 tokens launched in 92 days and almost all of them are dented past use. Telling the discounted from the spoiled is the entire job of this page.</p>
+      <p class="reveal" style="--d:60ms"><a href="token.html#steps" style="font-family:var(--ui);font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid var(--gold2);padding-bottom:2px">Read the whole idea, in five steps &rarr;</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p class="buildstamp">Build <b>__BUILD__</b> &middot; chart with timeframes, price/market cap, crosshair, measure and entry line</p>
+    <p>Data: the Robinhood Chain Blockscout explorer, the public chain RPC and DexScreener, read live from your browser. No server, no account, no tracking. Figures are only as good as those sources and can be wrong or missing.</p>
+    <p>This is a condition report, not advice. Nothing here is a recommendation to buy or sell anything. $DENTED is an independent community token, not affiliated with or endorsed by Robinhood Markets, Inc. or Vlad Tenev. Trading tokens on any chain can result in the total loss of what you commit.</p>
+  </footer>
+</div>
