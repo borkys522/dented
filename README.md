@@ -1,3 +1,6 @@
+<img width="1280" height="640" alt="photo_2026-09-18_19-29-01" src="https://github.com/user-attachments/assets/07deb27f-538e-4b92-b57f-1daa535cc921" />
+
+
 # DENTED
 
 A condition report for Robinhood Chain tokens. Paste a contract, find out what you are about to buy.
